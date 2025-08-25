@@ -11,18 +11,7 @@ const jpeg = await getImage({ src: logo, format: "jpeg", widths: [400, 800, 1200
     <div class="nav-container">
       <div class="logo">
         <a href="/">
-            <picture>
-                <source srcset={avif.attributes.srcset} type="image/avif" sizes="100vw" />
-                <source srcset={webp.attributes.srcset} type="image/webp" sizes="100vw" />
-                <img
-                  src={jpeg.src}
-                  srcset={jpeg.attributes.srcset}
-                  sizes="100vw"
-                  alt="Wiselook Microsoft Teams' AI agent and interface"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </picture>
+            <img src={`${import.meta.env.BASE_URL}src/assets/logo.png`} alt="wiselook logo" />
         </a>
       </div>
       <ul class="nav-links">
