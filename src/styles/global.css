@@ -2,6 +2,38 @@
 @import "footer.css";
 @import "hero.css";
 
+
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/wiselook/fonts/PPPangramSans-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/wiselook/fonts/PPPangramSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/wiselook/fonts/PPPangramSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/wiselook/fonts/PPPangramSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/wiselook/fonts/PPPangramSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
 :root {
     --button: #371BFF;
     --link: #371BFF;
