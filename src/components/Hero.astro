@@ -9,27 +9,25 @@ const png = await getImage({ src: hero, format: "png", widths: [400, 800, 1200] 
 ---
 
 <div class="container">
-  <main>
-    <section id="hero">
-      <h1>
-        <span class="emphasis">99% </span>of your talent has 
-        <span class="emphasis">potential</span> you can't see.
-      </h1>
-
-	  <picture>
+	<section id="hero">
+		<h1>
+		<span class="emphasis">99% </span>of your talent has 
+		<span class="emphasis">potential</span> you can't see.
+		</h1>
+		<!--TENER UNA PARA DESKTOP Y OTRA PARA MOVIL-->
+		<picture>
 		<source srcset={avif.attributes.srcset} type="image/avif" sizes="100vw" />
 		<source srcset={webp.attributes.srcset} type="image/webp" sizes="100vw" />
 		<img
-		  src={png.src}
-		  srcset={png.attributes.srcset}
-		  sizes="100vw"
-		  alt="Wiselook Microsoft Teams' AI agent and interface"
-		  loading="lazy"
-		  decoding="async"
+			src={png.src}
+			srcset={png.attributes.srcset}
+			sizes="100vw"
+			alt="Wiselook Microsoft Teams' AI agent and interface"
+			loading="lazy"
+			decoding="async"
 		/>
-	  </picture>
-      <h2>Stop guessing. <span class="emphasis">Start seeing.</span></h2>
-      <button class="request-demo">Request Demo</button>
-    </section>
-  </main>
+		</picture>
+		<h2>Stop guessing. <span class="emphasis">Start seeing.</span></h2>
+		<button class="request-demo">Request Demo</button>
+	</section>
 </div>
