@@ -1,9 +1,30 @@
+---
+import { getImage } from "astro:assets";
+import logo from "../assets/logo.png";
+
+// Generate multiple formats and responsive widths
+const avif = await getImage({ src: logo, format: "avif", widths: [400, 800, 1200] });
+const webp = await getImage({ src: logo, format: "webp", widths: [400, 800, 1200] });
+const png = await getImage({ src: logo, format: "png", widths: [400, 800, 1200] });
+---
+
 <header>
   <nav>
     <div class="nav-container">
       <div class="logo">
         <a href="/">
-            <img src={`${import.meta.env.BASE_URL}/assets/logo.png`} alt="wiselook logo" />
+            <picture>
+                <source srcset={avif.attributes.srcset} type="image/avif" sizes="100vw" />
+                <source srcset={webp.attributes.srcset} type="image/webp" sizes="100vw" />
+                <img
+                  src={png.src}
+                  srcset={png.attributes.srcset}
+                  sizes="100vw"
+                  alt="Wiselook logo'"
+                  loading="lazy"
+                  decoding="async"
+                />
+            </picture>
         </a>
       </div>
       <ul class="nav-links">
