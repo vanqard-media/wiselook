@@ -1,0 +1,125 @@
+@import "header.css";
+@import "footer.css";
+@import "hero.css";
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/fonts/PPPangramSans-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/fonts/PPPangramSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/fonts/PPPangramSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/fonts/PPPangramSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'PPPangramSans';
+    src: url('/fonts/PPPangramSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root {
+    --button: #371BFF;
+    --link: #371BFF;
+    --cta: #371BFF;
+    --highlights: #371BFF;
+    --main-background: #ECECF1;
+    --hover: #8CB4FF;
+    --secondary-background: #8CB4FF;
+    --subtle-backgrounds: #B6D5FF;
+    --section-fills: #B6D5FF;
+    --emphasize: #FFA76C;
+    --text: #000000;
+    --button-text: #FFFFFF;
+}
+
+
+
+body {
+    background: url('../assets/background.png') no-repeat center top/cover;
+    font-family: 'PPPangramSans', sans-serif;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-block-end: 50px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+}
+
+.box h2 {
+    margin: 0 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.emphasis {
+    color: var(--emphasize);
+    font-weight: 700;
+}
+
+button {
+    font-weight: 500;
+    font-size: 24px;
+    padding: 20px;
+    font-family: 'PPPangramSans', sans-serif;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--button);
+    color: var(--button-text);
+    align-items: center;
+    margin-block-end: 50px;
+    margin-block-start: 0px;
+}
+

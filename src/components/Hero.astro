@@ -1,7 +1,6 @@
 ---
 import { getImage } from "astro:assets";
 import hero from "../assets/hero.png";
-import logo from "../assets/logo.svg";
 
 // Generate multiple formats and responsive widths
 const avif = await getImage({ src: hero, format: "avif", widths: [400, 800, 1200] });

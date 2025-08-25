@@ -1,0 +1,37 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    background: transparent; /* or your brand color */
+    padding: 40px 40px;
+  }
+  
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: 50px;   /* pick the exact size you want */
+    width: auto;    /* keeps aspect ratio */
+    display: block; /* removes extra spacing under the image */
+}
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* spacing between links */
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+}

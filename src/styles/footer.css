@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-background);
+    padding: 60px;
+}
+
+footer .container {
+    align-items: unset;
+    width: 50%;
+}
+
+.text-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-block-footer {
+    text-align: center;
+    border-color: #000000;
+}
