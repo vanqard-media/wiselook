@@ -5,7 +5,7 @@ import hero from "../assets/hero.png";
 // Generate multiple formats and responsive widths
 const avif = await getImage({ src: hero, format: "avif", widths: [400, 800, 1200] });
 const webp = await getImage({ src: hero, format: "webp", widths: [400, 800, 1200] });
-const jpeg = await getImage({ src: hero, format: "jpeg", widths: [400, 800, 1200] });
+const png = await getImage({ src: hero, format: "png", widths: [400, 800, 1200] });
 ---
 
 <div class="container">
@@ -20,8 +20,8 @@ const jpeg = await getImage({ src: hero, format: "jpeg", widths: [400, 800, 1200
 		<source srcset={avif.attributes.srcset} type="image/avif" sizes="100vw" />
 		<source srcset={webp.attributes.srcset} type="image/webp" sizes="100vw" />
 		<img
-		  src={jpeg.src}
-		  srcset={jpeg.attributes.srcset}
+		  src={png.src}
+		  srcset={png.attributes.srcset}
 		  sizes="100vw"
 		  alt="Wiselook Microsoft Teams' AI agent and interface"
 		  loading="lazy"
