@@ -17,7 +17,7 @@ nav {
     justify-content: space-between;
 }
 
-.logo-img {
+.logo img {
     height: 50px;   /* pick the exact size you want */
     width: auto;    /* keeps aspect ratio */
     display: block; /* removes extra spacing under the image */
