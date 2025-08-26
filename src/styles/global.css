@@ -1,6 +1,7 @@
 @import "header.css";
 @import "footer.css";
 @import "hero.css";
+@import "home.css";
 
 @font-face {
     font-family: 'PPPangramSans';
@@ -129,7 +130,7 @@ button {
     }
 
     h2 {
-        width: 75%;
+        width: 90%;
     }
 
     button {

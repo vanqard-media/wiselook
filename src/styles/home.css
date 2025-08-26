@@ -1,0 +1,79 @@
+.table-usecase {
+    background: var(--emphasize); 
+    border-radius: 30px;
+    max-width: 500px;
+    margin: 0;
+    box-shadow: 0px 0px 30px grey;
+
+  }
+
+  .table-title {
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    background-color: var(--emphasize);
+    top: 20px;
+}
+
+.table-title h3 {
+    margin: 0;
+    margin-block: 0;
+    color: white;
+}
+
+.table-contents {
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.table-bubble {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid var(--emphasize);
+    padding: 10px;
+    background-color: #FFEFE7;
+    margin: 10px auto;
+    border-radius: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table-bubble:first-of-type {
+    margin-top: 30px;
+  }
+
+.icon {
+    font-size: 24px;
+    color: #f9ad7e;
+    flex-shrink: 0;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.table-info {
+    width:80%;
+}
+
+
+.table-info h4 {
+    margin: 0 0 4px 0;
+    font-weight: 700;
+    color: var(--emphasize);
+    text-align: center;
+    font-size: 24px;
+}
+  
+.table-info p {
+    margin: 0;
+    color: #2b3d5c; /* dark text */
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
